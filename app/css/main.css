@@ -47,5 +47,30 @@ table {
 	border-spacing: 0;
 }
 
-/* Core Styles... */
+div#main {
+	position: relative;
+}
 
+div#default-container {
+	border: 1px solid #a0a0a0;
+	margin: 0 auto;
+	width: 70%;
+}
+
+footer#default-footer {
+	background-color: #e0e0e0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding: 20px 0 20px 0;
+	border-top: 1px solid #a0a0a0;
+}
+
+div#footer-opener-container {
+	padding: 30px;
+	width: 15px;
+	cursor: pointer;
+	margin: 0 auto;
+	border-radius: 100px;
+	border: 1px solid #a0a0a0;
+}

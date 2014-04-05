@@ -1,8 +1,8 @@
 (function($) {
 
-	// Quick and Clean...
-
 	'use strict';
+
+	// Views...
 
 	var DefaultView = Backbone.View.extend({
 		template: _.template($('#default-view-template').html()),
@@ -14,6 +14,8 @@
 			console.log('DefaultView init...');
 		}
 	});
+
+	// Router...
 
 	var AppRouter = Backbone.Router.extend({
 		routes: {
