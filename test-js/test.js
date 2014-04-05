@@ -26,6 +26,24 @@
 
 	console.log(nestedTech.favTools.three);
 
+	function average(x, y) {
+		var avg = (x + y) / 2;
+		return avg;
+	}
+
+	console.log(average());
+	console.log(average(20, 3));
+
+	function averageArgs() {
+		var sum = 0;
+		for (var i = 0, j = arguments.length; i < j; i += 1) {
+			sum += arguments[i];
+		}
+		return sum / arguments.length;
+	}
+
+	console.log(averageArgs(3, 6, 9, 12));
+
 	
 
 }());
