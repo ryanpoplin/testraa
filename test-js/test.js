@@ -1,5 +1,7 @@
 (function() {
 
+	'use strict';
+
 	var newObject = new Object();
 	var newObj = {};
 	
