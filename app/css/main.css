@@ -47,30 +47,54 @@ table {
 	border-spacing: 0;
 }
 
-div#main {
-	position: relative;
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
 
-div#default-container {
+/* Testing Starts... */
+
+div#input-test-container {
+	background-color: #c0c0c0;
+	padding: 20px;
+}
+
+input.test-input {
+	background-color: red;
+	width: 100%;
+	padding: .4em .55em;
+	font-size: inherit;
+	font-family: inherit;
+	color: inherit;
+	border: 0;
+	border-radius: .25em;
+	outline: none;
+}
+	
+/* Testing Ends... */
+
+/*div#default-container {
 	border: 1px solid #a0a0a0;
-	margin: 0 auto;
-	width: 70%;
-}
+	margin: 40px auto;
+	border-radius: 4px;
+}*/
 
-footer#default-footer {
+/*footer#default-footer {
 	background-color: #e0e0e0;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
-	padding: 20px 0 20px 0;
+	padding: 40px 0 40px 0;
 	border-top: 1px solid #a0a0a0;
-}
+}*/
 
-div#footer-opener-container {
+/*div#footer-opener-btn {
+	position: absolute;
 	padding: 30px;
-	width: 15px;
+	top: 2;
 	cursor: pointer;
 	margin: 0 auto;
 	border-radius: 100px;
 	border: 1px solid #a0a0a0;
-}
+}*/

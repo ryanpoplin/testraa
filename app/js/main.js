@@ -1,14 +1,13 @@
-(function($) {
+'use strict';
 
-	'use strict';
+(function($) {
 
 	// Views...
 
 	var DefaultView = Backbone.View.extend({
 		template: _.template($('#default-view-template').html()),
 		render: function() {
-			var html = this.template;
-			$(this.el).html(html);
+			$(this.el).html(this.template);
 		},
 		initialize: function() {
 			console.log('DefaultView init...');
@@ -23,7 +22,7 @@
 		},
 		defaultRoute: function() {
 			var defaultView = new DefaultView({
-				el: '#main'
+				el: 'body'
 			});
 			defaultView.render();
 		}
