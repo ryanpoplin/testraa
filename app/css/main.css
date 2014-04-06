@@ -47,49 +47,61 @@ table {
 	border-spacing: 0;
 }
 
+/* Testing Starts... */
+
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box
 }
 
-/* Testing Starts... */
+div#logo-container {
+	border: 1px solid #a0a0a0;
+	margin: 20px auto;
+	width: 35%;
+	height: 300px;
+	text-align: center;
+	line-height: 300px;
+}
 
-div#input-test-container {
-	background-color: #c0c0c0;
+div#test-container {
+	background-color: #f0f0f0;
+	width: 35%;
+	margin: 0 auto;
 	padding: 20px;
 }
 
-input.test-input {
-	background-color: red;
+div.test-btn {
+	cursor: pointer;
+	text-align: center;
+	background-color: #fefefe;
 	width: 100%;
-	padding: .4em .55em;
+	padding: 1.5em .55em;
 	font-size: inherit;
 	font-family: inherit;
 	color: inherit;
+	margin: 10px 0;
 	border: 0;
 	border-radius: .25em;
 	outline: none;
 }
 	
-/* Testing Ends... */
-
-/*div#default-container {
-	border: 1px solid #a0a0a0;
+div#default-container {
+	text-align: center;
 	margin: 40px auto;
 	border-radius: 4px;
-}*/
+}
 
-/*footer#default-footer {
+footer#default-footer {
 	background-color: #e0e0e0;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	padding: 40px 0 40px 0;
 	border-top: 1px solid #a0a0a0;
-}*/
+}
 
-/*div#footer-opener-btn {
+div#footer-opener-btn {
 	position: absolute;
 	padding: 30px;
 	top: 2;
@@ -97,4 +109,4 @@ input.test-input {
 	margin: 0 auto;
 	border-radius: 100px;
 	border: 1px solid #a0a0a0;
-}*/
+}
