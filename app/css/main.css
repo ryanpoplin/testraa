@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	margin-bottom: 120px;
+	/*margin-bottom: 120px;*/
+	font-family: 'Open Sans';
 	line-height: 1;
 }
 ol, ul {
@@ -59,12 +60,18 @@ table {
 div#test-container {
 	border: .5em solid red;
 	padding: 2em;
-	max-width: 600px;
-	margin: 0 auto;
+	height: 300px;
+	max-width: 750px;
+	margin: 55px auto;
+	text-align: center;
+}
+
+span#logo-span {
+	font-size: 12em;
 }
 
 div.container {
-	max-width: 600px;
+	max-width: 750px;
 	margin: 0 auto;
 	border: .3em solid yellow;
 }
@@ -87,9 +94,13 @@ section {
 	}
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 749px) {
 	nav li {
 		display: inline;
+	}
+	#logo-span {
+		color: #10b5b8;
+		font-size: 8em;
 	}
 	#test-footer-btn, #test-footer {
 		display: none;
@@ -98,10 +109,10 @@ section {
 
 div#test-footer-btn {
 	position: fixed;
-	padding: 3.3em;
+	padding: 4.2em;
 	bottom: 0;
 	left: 50%;
-	margin-left: -40px;
+	margin-left: -70px;
 	border-radius: 100px;
 	cursor: pointer;
 	background-color: #e0e0e0;
@@ -114,5 +125,9 @@ footer#test-footer {
 	left: 0;
 	width: 100%;
 	padding: 30px;
+	text-align: center;
 }
 
+span#footer-span {
+	font-size: 1.7em;
+}
