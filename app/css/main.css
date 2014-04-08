@@ -232,6 +232,15 @@ footer#test-footer {
 	height: 100px;
 }
 
+#magic-footer-container {
+	border: .5em solid red;
+	padding: 2em;
+	height: 100px;
+	max-width: 750px;
+	margin: 55px auto;
+	text-align: center;
+}
+
 span#footer-span {
 	display: block;
 	margin: 0 auto;

@@ -25,7 +25,9 @@
 					height: 230
 				});
 
-				$('#footer-span').hide();
+				$('#magic-footer-container').show();
+
+				/*$('#footer-span').hide();*/
 
 				return true;
 			
@@ -38,6 +40,8 @@
 					height: 130
 				});
 
+				$('#magic-footer-container').hide();
+
 				$('#footer-span').show();
 
 				return true;
@@ -48,6 +52,8 @@
 	}
 
 	$(function() {
+
+		$('#magic-footer-container').hide();
 		
 		$('#test-footer-btn').on('click', function(event) {
 
