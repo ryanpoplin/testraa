@@ -57,13 +57,18 @@ table {
 }
 
 div#main-content {
-	/*display: none;*/
+	display: none;
 	border-radius: 4px;
 	padding: 10px;
-	width: 750px;
+	width: 100%;
 	margin: 0 auto;
 	height: 300px;
 	overflow: hidden;
+	border: .2em solid red;
+	/*background-image: url("../../test-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;*/
 }
 
 .cloud {
@@ -163,60 +168,75 @@ div#main-content {
 }
 
 div#test-container {
-	border: .5em solid red;
+	/*border: .5em solid red;*/
 	padding: 2em;
 	height: 300px;
 	max-width: 750px;
-	margin: 55px auto;
+	margin: 15px auto;
 	text-align: center;
-}
-
-span#logo-span {
-	font-size: 12em;
 }
 
 div.container {
 	max-width: 750px;
 	margin: 0 auto;
-	border: .3em solid yellow;
+	/*border: .3em solid yellow;*/
 }
 
 nav {
 	border: .3em solid pink;
 }
 
-section {
-	border: .3em solid brown;
+.space {
+	padding: 10px 0 10px 0;
 }
 
-@media screen and (min-width: 600px) {
-	nav {
-		float: left;
-		width: 25%;
+section {
+	/*border: .3em solid brown;*/
+}
+
+section p {
+	padding: 30px 0 30px 0;
+	font-size: .6em;
+	color: #10b5b8;
+}
+
+@media screen and (min-width: 750px) {
+	#logo-span {
+		color: #10b5b8;
+		font-size: 12em;
 	}
 	section {
-		margin-left: 25%;
+		text-align: center;
+		font-size: 4em;
+	}
+	span#footer-span {
+		display: block;
+		margin: 0 auto;
+		font-size: 1.7em;
 	}
 }
 
 @media screen and (max-width: 749px) {
-	nav li {
-		display: inline;
-	}
 	#logo-span {
 		color: #10b5b8;
-		font-size: 8em;
+		font-size: 7em;
 	}
-	#test-footer-btn, #test-footer {
-		display: none;
+	section {
+		text-align: center;
+		font-size: 2em;
+	}
+	span#footer-span {
+		font-size: 1em;
 	}
 }
+
+/* Footer Area... */
 
 div#test-footer-btn {
 	position: fixed;
 	padding: 4.2em;
 	bottom: 0;
-	left: 50%;
+	left: 50%; 
 	margin-left: -70px;
 	border-radius: 100px;
 	cursor: pointer;
@@ -233,16 +253,10 @@ footer#test-footer {
 }
 
 #magic-footer-container {
-	border: .5em solid red;
+	border: .1em dashed #10b5b8;
 	padding: 2em;
 	height: 100px;
 	max-width: 750px;
 	margin: 55px auto;
 	text-align: center;
-}
-
-span#footer-span {
-	display: block;
-	margin: 0 auto;
-	font-size: 1.7em;
 }
