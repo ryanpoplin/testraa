@@ -10,13 +10,22 @@
 	};
 
 	function animateRotate(d){
+
     	$({deg: 0}).animate({deg: d}, {
-        	step: function(now, fx){
-            	$("#test-footer-btn").css({
-                 transform: "rotate(" + now + "deg)"
-            	});
+        	step: function(now){
+        		console.log(now);
+        		if (180 === 180) {
+        			$('#test-footer-btn').css({
+        				transform: "rotate(" + -now + "deg)"
+        			});
+        		} else {
+            		$("#test-footer-btn").css({
+                 		transform: "rotate(" + now + "deg)"
+            		});
+        		}
         	}
     	});
+
 	}
 
 	function toggleFooter() {
@@ -65,7 +74,7 @@
 		
 		$('#test-footer-btn').on('click', function(event) {
 
-			animateRotate(270);
+			animateRotate(180);
 			
 			toggleFooter();
 		
