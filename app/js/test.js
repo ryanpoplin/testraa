@@ -9,6 +9,16 @@
 
 	};
 
+	function animateRotate(d){
+    	$({deg: 0}).animate({deg: d}, {
+        	step: function(now, fx){
+            	$("#test-footer-btn").css({
+                 transform: "rotate(" + now + "deg)"
+            	});
+        	}
+    	});
+	}
+
 	function toggleFooter() {
 
 		var testFooterHeight;
@@ -25,9 +35,7 @@
 					height: 230
 				});
 
-				$('#magic-footer-container').show();
-
-				/*$('#footer-span').hide();*/
+				$('#magic-footer-container').fadeIn();
 
 				return true;
 			
@@ -40,7 +48,7 @@
 					height: 130
 				});
 
-				$('#magic-footer-container').hide();
+				$('#magic-footer-container').fadeOut();
 
 				$('#footer-span').show();
 
@@ -57,6 +65,8 @@
 		
 		$('#test-footer-btn').on('click', function(event) {
 
+			animateRotate(270);
+			
 			toggleFooter();
 		
 		});
