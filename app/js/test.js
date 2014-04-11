@@ -14,15 +14,9 @@
     	$({deg: 0}).animate({deg: d}, {
         	step: function(now){
         		console.log(now);
-        		if (180 === 180) {
-        			$('#test-footer-btn').css({
-        				transform: "rotate(" + -now + "deg)"
-        			});
-        		} else {
             		$("#test-footer-btn").css({
                  		transform: "rotate(" + now + "deg)"
             		});
-        		}
         	}
     	});
 
@@ -41,8 +35,10 @@
 				});
 				
 				$('#test-footer-btn').animate({
-					height: 230
+					bottom: 160
 				});
+
+				animateRotate(180);
 
 				$('#magic-footer-container').fadeIn();
 
@@ -54,10 +50,12 @@
 					height: 100
 				});
 				$('#test-footer-btn').animate({
-					height: 130
+					bottom: 60
 				});
 
 				$('#magic-footer-container').fadeOut();
+
+				animateRotate(-360);
 
 				$('#footer-span').show();
 
@@ -73,8 +71,6 @@
 		$('#magic-footer-container').hide();
 		
 		$('#test-footer-btn').on('click', function(event) {
-
-			animateRotate(180);
 			
 			toggleFooter();
 		
